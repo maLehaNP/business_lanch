@@ -38,6 +38,7 @@ class Widget(QWidget, Ui_Form):
         if self.sender().isChecked() == True:
             self.pos_k += 1
         else:
+            # нужно чтобы снимались радио-кнопки при убирании галки
             self.pos_k -= 1
         self.enable_check()
 
